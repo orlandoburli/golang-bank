@@ -1,0 +1,29 @@
+### Create a new Person
+POST http://localhost:8080/v1/persons
+
+{
+   "name": "Orlando Burli Junior",
+   "birthday": "1981-02-13T00:00:00+00:00",
+   "gender": "Male",
+   "cpf": "70289018153111"
+}
+
+
+### Update a person
+PUT http://localhost:8080/v1/persons/1c132c2a-c80f-46b3-8062-92fbf65f2ea9
+
+{
+   "name": "Orlando Burli Junior",
+   "birthday": "1981-02-13T00:00:00+00:00",
+   "gender": "Male",
+   "cpf": "70289018153111"
+}
+
+### Delete a person
+DELETE http://localhost:8080/v1/persons/1c132c2a-c80f-46b3-8062-92fbf65f2ea9
+
+### Get a specifc person
+GET http://localhost:8080/v1/persons/1c132c2a-c80f-46b3-8062-92fbf65f2ea9
+
+### Get a list of persons
+GET http://localhost:8080/v1/persons?page=1&size=10
