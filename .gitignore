@@ -1,3 +1,5 @@
 .idea/
 
 infra/data/
+
+coverage.out
